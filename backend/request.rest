@@ -1,0 +1,26 @@
+### Select all
+GET http://localhost:5000/products
+
+### Select by ID
+GET http://localhost:5000/products/1
+
+### Insert
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "title": "Product 1",
+    "price": 889
+}
+
+### Update dengan ID
+PATCH http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+    "title": "Product 1",
+    "price": 100
+}
+
+### Delete dengan ID
+DELETE  http://localhost:5000/products/1
